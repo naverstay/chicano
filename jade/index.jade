@@ -1,0 +1,313 @@
+include mixins.pug
+doctype html
+html(lang='ru')
+    +dev_head('Chicano')
+
+    body.cell_mode
+        .wrapper
+            +header()
+            
+            //-+header_menu(1)
+
+            div.main_slider.pageSlider
+                #bikini.slide_section.section-v1.firstPage(data-bs='i/section_1.jpg')
+                    //-.scroll-down_btn.scrollDown
+                    .section_table: .section_cell: .section_inner
+                        .bikini
+                            img(src='i/belkin.png')
+                        .bikini-block
+                            p Where to find the best burritos in berlin was the eternal question.  So we came with the answer .. Lets do it! we organized and hier we are in the addicted burrito world of berlin.
+                            p WE IS, the real Chicano...
+                            //-p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            p.clearfix
+                                a.btn_v1.start_btn.btn_white.scrollToLink(href='#contacts') Try now
+                                    
+                #menu_section.slide_section.section-v2.secondPage(data-bs='i/section_2.jpg')
+                    //-.scroll-down_btn.scrollDown
+                    .section_table: .section_cell: .section_inner
+                        .menu-block
+                            h2.section_caption MENU
+                            p A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. 
+                            ul.menu_switch
+                                li
+                                    a.btn_v1.menu_btn.green_btn.scrollToLink(href='#contacts') Catering
+                                li
+                                    a.btn_v1.menu_btn.green_btn.menuBtn(href='#menu_popup') Menu
+                        
+                #about.slide_section.section-v3.thirdPage(data-bs='i/section_3.jpg')
+                    //-.scroll-down_btn.scrollDown
+                    .section_table: .section_cell: .section_inner
+                        .about-block
+                            h2.section_caption ABOUT US
+                            
+                            p Where to find the best burritos in Berlin. was the eternal question. So we came with the answer. Lets do it! We organized and hier we are in the addicted burrito world of Berlin. 
+
+                            p WE IS, the real chicano!
+                            
+                        .about-block
+                            h2.section_caption Who are Chicano?
+                            
+                            p Chosen identity of some mexican Americans in the us and we actually agree with that. As we started our unique burrito place in berlin, dedicated to do high quality burritos in berlin. all our burritos are hand made with home made salsas, and well chosen ingredients build infront of your eyes. from the chicano Burrito Boys hier im herzen von Berlin.
+
+                #team.slide_section.section-v4.forthPage(data-bs='i/section_4.jpg' data-bs-768='i/section_4_768.jpg' data-bs-320='i/section_4_320.jpg')
+                    .section_table: .section_cell: .section_inner
+                        .team-block
+                            h2.section_caption our team
+                            
+                            p Our burrito boys and mayan virgen princesses
+
+                #gallery.slide_section.section-v5.fifthPage.noBS()
+                    //-.scroll-down_btn.scrollDown
+                    .section_table: .section_cell: .section_inner
+                        .gallery-block
+                            h2.section_caption GALLERY
+
+                            p The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli.
+
+                            .gallerySlider.gallery_slider
+                                +loop_while(6)
+                                    .gal_slide
+                                        img(src='i/gal_1.jpg')
+
+                #items.slide_section.section-v6.sixthPage.noBS()
+                    //-.scroll-down_btn.scrollDown
+                    .section_table: .section_cell: .section_inner
+                        .dishes_list_w: .dishes_list.dishSlider
+                            .dish_li
+                                a.dish_item.fancybox(rel="gallery1" href='i/1.jpg' title='Item 1' data-fb-title='Item 1' data-fb-text='chicken & guacamole')
+                                    img(src='i/1.jpg')
+                                    span.btn_v1.btn_white.dish_btn Item 1
+                                    .dish_info
+                                        .dish_name Item 1
+                                        p chicken & guacamole
+                            .dish_li
+                                a.dish_item.fancybox(rel="gallery1" href='i/2.jpg' title='Item 2' data-fb-title='Item 2' data-fb-text='chicken & guacamole 2')
+                                    img(src='i/2.jpg')
+                                    span.btn_v1.btn_white.dish_btn Item 2
+                                    .dish_info
+                                        .dish_name Item 2
+                                        p chicken & guacamole
+                            .dish_li
+                                a.dish_item.fancybox(rel="gallery1" href='i/3.jpg' title='Item 1' data-fb-title='Item 1' data-fb-text='chicken & guacamole')
+                                    img(src='i/3.jpg')
+                                    span.btn_v1.btn_white.dish_btn Item 3
+                                    .dish_info
+                                        .dish_name Item 3
+                                        p chicken & guacamole
+                            .dish_li
+                                a.dish_item.fancybox(rel="gallery1" href='i/4.jpg' title='Item 2' data-fb-title='Item 2' data-fb-text='chicken & guacamole 2')
+                                    img(src='i/4.jpg')
+                                    span.btn_v1.btn_white.dish_btn Item 4
+                                    .dish_info
+                                        .dish_name Item 4
+                                        p chicken & guacamole
+                            .dish_li
+                                a.dish_item.fancybox(rel="gallery1" href='i/5.jpg' title='Item 1' data-fb-title='Item 1' data-fb-text='chicken & guacamole')
+                                    img(src='i/5.jpg')
+                                    span.btn_v1.btn_white.dish_btn Item 5
+                                    .dish_info
+                                        .dish_name Item 5
+                                        p chicken & guacamole
+                            .dish_li
+                                a.dish_item.fancybox(rel="gallery1" href='i/6.jpg' title='Item 2' data-fb-title='Item 2' data-fb-text='chicken & guacamole 2')
+                                    img(src='i/6.jpg')
+                                    span.btn_v1.btn_white.dish_btn Item 6
+                                    .dish_info
+                                        .dish_name Item 6
+                                        p chicken & guacamole
+                            .dish_li
+                                a.dish_item.fancybox(rel="gallery1" href='i/7.jpg' title='Item 1' data-fb-title='Item 1' data-fb-text='chicken & guacamole')
+                                    img(src='i/7.jpg')
+                                    span.btn_v1.btn_white.dish_btn Item 7
+                                    .dish_info
+                                        .dish_name Item 7
+                                        p chicken & guacamole
+                            .dish_li
+                                a.dish_item.fancybox(rel="gallery1" href='i/8.jpg' title='Item 2' data-fb-title='Item 2' data-fb-text='chicken & guacamole 2')
+                                    img(src='i/8.jpg')
+                                    span.btn_v1.btn_white.dish_btn Item 8
+                                    .dish_info
+                                        .dish_name Item 8
+                                        p chicken & guacamole
+
+                #contacts.slide_section.section-v7.seventhPage.noBS.footer_section()
+                    //-.scroll-down_btn.scrollDown
+                    .section_table: .section_cell: .section_inner
+                        .contact-block
+                            h2.section_caption contact
+                            
+                            ul.contact_list
+                                li
+                                    a.contact_link.pin(href='#') Bikini Berlin, Budapester Str. 46, 10787 Berlin
+                                li
+                                    a.contact_link.phone(href='#') +49 (0) 1578 190 1620
+                                li
+                                    a.contact_link.envelope(href='mailto:catering@chicanorealburritos.com') catering@chicanorealburritos.com
+                                    
+                        .map-block
+                            .map
+                                img.map_img(src='i/map.jpg')
+                            
+                            .contact-form
+                                form(action='#')
+                                    .form_caption Send us a message:
+                                    .form_cell
+                                        input.f_input_v1(placeholder='Name')
+                                    .form_cell
+                                        input.f_input_v1(placeholder='E-mail')
+                                    .form_cell
+                                        input.f_input_v1(placeholder='Phone')
+                                    .form_cell
+                                        textarea.f_input_v1(placeholder='Message?')
+                                    .form_cell
+                                        button.btn_v2.msg_btn.green_btn_2 Submit
+                                
+                                ul.share_block
+                                    li: a.sh_link.i-f(href='#')
+                                    li: a.sh_link.i-i(href='#')
+                    .footer
+                        .copyright
+                            span Copyright 2015 Chicano. 
+                            span.dt_hidden  <br> 
+                            span  All rights reserved.
+
+        #menu_popup.menu_popup(style='display:none;')
+            .menu_inner
+                .popup_logo
+                    img(src='i/popup_logo.png')
+                .menu_caption
+                    span Burritos in tortilla
+                    sup (1)
+                    span  or bowl
+                    
+                .menu_list
+                    .menu_dish
+                        .menu_dish_name 
+                            img(src='i/mikhlo.png')
+                        .menu_dish_tip chicken
+                        .menu_dish_price € 7,5
+                            
+                    .menu_dish
+                        .menu_dish_name 
+                            img(src='i/4th_street.png')
+                        .menu_dish_tip beef
+                        .menu_dish_price € 7,5
+                            
+                    .menu_dish
+                        .menu_dish_name 
+                            img(src='i/triste.png')
+                        .menu_dish_tip veggie
+                        .menu_dish_price € 7,5
+                            
+                            
+                .menu_list_tip 
+                    span With lime rice, mixed beans, sweet corn, pico de gallo
+                    sup (2)
+                    span  , cheese
+                    sup (3)
+                    span  , sour cream
+                    sup (3)
+                    span  , salad + sauce of choice
+
+                .sauces_block
+                    .sauces_caption: span Sauces:
+                    .sauces_list
+                        .sauces_item
+                            .sauces_peppers
+                                +loop_while(3)
+                                    .pepper
+                                        img(src='i/pepper_red.png')
+                            .sauces_name Chipotle 
+                        
+                        .sauces_item
+                            .sauces_peppers
+                                +loop_while(2)
+                                    .pepper
+                                        img(src='i/pepper_red.png')
+                            .sauces_name Mole 
+                        
+                        .sauces_item
+                            .sauces_peppers
+                                .pepper
+                                    img(src='i/pepper_red.png')
+                            .sauces_name Rollo 
+                                            
+                        .sauces_item
+                            .sauces_peppers
+                                .pepper
+                                    img(src='i/pepper_yellow.png')
+                            .sauces_name Green sauce 
+                    .sauces_price
+                        span Extra Guac  1,50 € 
+                    
+                .menu_list
+                    .menu_dish
+                        .menu_dish_name.MaturaMTScriptCapitals 
+                            //-span Lady burrito
+                            img(src='i/ledy_burrito.png')
+                        .menu_dish_ingredients Small tortilla  <br> with lime rice, mixed beans, sweet corn, pico de gallo, cheese, sour cream, salad  <br>  +sauce of choice
+                        .menu_dish_price € 5,0
+
+                    .menu_dish
+                        .menu_dish_name.CooperBlack
+                            //-span Vegan <br> burrito
+                            img(src='i/vegan_burrito.png')
+                        .menu_dish_ingredients With lime rice, mixed beans, sweet corn, pico de gallo, guacamole, salad  <br>  + sauce of choice
+                        .menu_dish_price € 7,5
+
+                    .menu_dish
+                        .menu_dish_name.TrattatelloRegular
+                            //-span Bikini Berlin  <br> Bowl
+                            img(src='i/bbb.png')
+                        .menu_dish_ingredients With lime rice, mixed beans, sweet corn, pico de gallo, sour cream, chicken, guacamole  <br>  + sauce of choice
+                        .menu_dish_price € 8,0
+
+                .spec_menu_caption
+                    span Specials
+                            
+                .menu_list
+                    .menu_dish
+                        .menu_dish_name.LithosProBlack
+                            //-span Quesadilla  <br> with guacamole
+                            img(src='i/quesadilla.png')
+
+                        .menu_dish_ingredients With cheese, sour cream, pico de gallo +sauce of choice
+                        .menu_dish_price € 6,0
+
+                    .menu_dish
+                        .menu_dish_name.HoboStd
+                            //-span Nachos with cheese
+                            img(src='i/nachos.png')
+                        .menu_dish_price € 3,5
+
+                    .menu_dish
+                        .menu_dish_name.BrochaRegular
+                            //-span Extra pico de gallo, sour cream and sauces
+                            img(src='i/pico_de_galo.png')
+                        .menu_dish_price € 1,50
+                            
+                            
+                    .menu_dish
+                        .menu_dish_name.AmericanTypewriterCond
+                            //-span Extra meat
+                            img(src='i/extra_meat.png')
+                        .menu_dish_price € 1,50
+
+                    .menu_dish
+                        .menu_dish_name.AmazingGroteskUltra
+                            //-span Extra beans
+                            img(src='i/extra_beans.png')
+                        .menu_dish_price € 1,0
+
+                    .menu_dish
+                        .menu_dish_name.ArnoProSmbdItalicCaption
+                            //-span Extra guac
+                            img(src='i/extra_guac.png')
+                        .menu_dish_price € 1,5
+                            
+                            
+
+
+
+        +scripts()
+        

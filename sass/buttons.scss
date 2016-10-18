@@ -1,0 +1,117 @@
+//************  buttons
+
+.btn_v1 {
+  height: 50px;
+
+  &.dish_btn {
+    @include transition_all(opacity .3s);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font: bold 16px/20px $RobotoSlab;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 11px;
+    width: 120px;
+    margin-top: -25px;
+    margin-left: -60px;
+  }
+
+  &.menu_btn {
+    display: inline-block;
+    vertical-align: top;
+    font: bold 16px/20px $RobotoSlab;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 11px 18px;
+    min-width: 120px;
+  }
+
+  &.start_btn {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    padding: 14px 18px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: .1px;
+  }
+}
+
+.btn_v2 {
+  height: 40px;
+
+  &.msg_btn {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font: 600 14px/20px $OpenSans;
+    text-align: center;
+
+    @include respond-to-min($resp_step_3) {
+      height: 25px;
+      padding: 2px 10px;
+      font-size: 11px;
+      margin-top: 12px;
+    }
+
+    @include respond-to-min($resp_step_2) {
+      height: 40px;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+  }
+}
+
+.btn_blue_transp {
+  border: 1px solid #29abe2;
+  color: #fff;
+}
+
+.green_btn {
+  border: 3px solid #225020;
+  color: #225020;
+  background: none;
+}
+
+.green_btn_2 {
+  background: #225020;
+  color: #fff;
+}
+
+.btn_red {
+  @include transition_all(background .3s);
+  color: #fff;
+  background: #e7624c;
+
+  &:hover {
+    background: darken(#e7624c, 5%);
+  }
+
+}
+
+.btn_white {
+  @include transition_all(background .3s, color .3s);
+  background: none;
+  color: #fff;
+  border: 3px solid #fff;
+
+  &:hover {
+    color: #000;
+    background: #fff;
+  }
+
+}
+
+
+
+
+

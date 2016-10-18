@@ -1,0 +1,31 @@
+.footer {
+  padding: 25px;
+  background: #222;
+
+  @include respond-to-min($resp_step_3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 6px;
+  }
+
+  @include respond-to-min($resp_step_2) {
+    padding: 17px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  opacity: .45;
+  font: 14px $RobotoCond;
+
+  @include respond-to-min($resp_step_3) {
+    font-size: 12px;
+  }
+
+  @include respond-to-min($resp_step_2) {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,79 @@
+@import "variables";
+
+@font-face {
+  font-family: 'chicano_icons';
+  src:  url('#{$icomoon-font-path}/chicano_icons.eot?jqc7y');
+  src:  url('#{$icomoon-font-path}/chicano_icons.eot?jqc7y#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/chicano_icons.ttf?jqc7y') format('truetype'),
+    url('#{$icomoon-font-path}/chicano_icons.woff?jqc7y') format('woff'),
+    url('#{$icomoon-font-path}/chicano_icons.svg?jqc7y#chicano_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="i-"], [class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'chicano_icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-pin {
+  &:before {
+    content: $i-pin;
+  }
+}
+.i-envelope {
+  &:before {
+    content: $i-envelope;
+  }
+}
+.i-close {
+  &:before {
+    content: $i-close;
+  }
+}
+.i-facebook {
+  &:before {
+    content: $i-facebook;
+  }
+}
+.i-phone {
+  &:before {
+    content: $i-phone;
+  }
+}
+.i-right_arrow {
+  &:before {
+    content: $i-right_arrow;
+  }
+}
+.i-arrow_left {
+  &:before {
+    content: $i-arrow_left;
+  }
+}
+.i-menu {
+  &:before {
+    content: $i-menu;
+  }
+}
+.i-user {
+  &:before {
+    content: $i-user;
+  }
+}
+.i-instagram {
+  &:before {
+    content: $i-instagram;
+  }
+}
+
